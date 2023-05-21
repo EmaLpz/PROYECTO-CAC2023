@@ -1,0 +1,332 @@
+.casillas-comentarios{
+    background-color: rgb(33, 28, 28);
+    color: antiquewhite;
+    border-radius: 15px;
+    border-style: double;
+    padding-bottom: 30px;
+    padding-top: 5px;
+    padding-left: 20px;
+    
+}
+@media (max-width: 600px) {
+    .casillas-comentarios{ width: 550px;
+        height: 50px;
+        padding-bottom: 90px;
+    }
+}
+@media (min-width: 600px) {
+            .casillas-comentarios{ width: 550px;
+                height: 50px;
+                padding-bottom: 90px;
+        
+
+    }
+}
+@media (min-width: 760px){
+         .casillas-comentarios{width: 1100px;
+
+}
+}
+#crear-comentario{
+    background-color: black;
+    border-radius: 15px;
+    border-style: double;
+    color: aliceblue;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+    #crear-comentario{ width: 550px;
+        height: 50px;
+    }
+           
+ 
+}
+@media (min-width: 760px){
+    #crear-comentario{width: 1100px;
+        
+
+}
+}
+
+ 
+
+
+
+body{
+   background-image: url(https://static.vecteezy.com/system/resources/previews/001/948/406/original/wood-table-top-for-display-with-blurred-restaurant-background-free-photo.jpg);
+   background-repeat:no-repeat;
+   background-size: 250%;
+   color: aliceblue;
+   border-style: double;
+   
+   
+   
+}
+   
+   @media (max-width: 600px) {
+   body { background-repeat: repeat;
+          padding: 50px;
+          width: 630px;
+}
+   
+      
+   }
+
+   @media (min-width: 600px) {
+    body { background-repeat: repeat;
+           padding: 50px;
+           width: 735px;
+        }
+    }
+    @media (min-width: 760px) {
+        body { background-repeat:repeat;
+               padding: 50px;
+               width: 1140px;
+               
+            }
+
+   }
+  
+.conteiner-1{
+    background-color: rgb(48, 47, 47);
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    border-radius: 10%;
+    
+    
+   
+    
+    
+    
+    
+    
+    
+}
+.navbar{
+    background-color: none;
+    display: flex;
+    
+    
+    
+
+
+ 
+    
+    
+
+}
+.punto{
+    display: inline;
+    background-color: aliceblue;
+
+}
+
+
+
+.Carrusel{
+    width: 2000px;
+    height: auto;
+    margin: 10px auto 10px;
+
+    animation: slide 25s infinite ease-in-out;
+}
+.Carrusel ul{
+    display:flex;
+    padding: 0px;
+    width: 400px;
+}
+
+.Carrusel li{
+    list-style: none;
+    width: 300px;
+    margin-left: 400px;
+
+
+}
+.Carrusel img{
+    width: 600px;
+    height: 500px;
+    border:15px;
+    border-style: groove;
+    border-color:rgb(33, 28, 28);
+}
+
+@keyframes slide{
+    0%{margin-left: -50%;}
+    35%{margin-left: -50%;}
+
+    45%{margin-left: -150%;}
+    65%{margin-left: -150%;}
+    
+    70%{margin-left: -250%;}
+    100%{margin-left: -250%;}
+
+}
+@media (max-width: 600px) {
+    .Carrusel { width: 500px;
+        
+    }
+    .Carrusel img{
+        width: 300px;
+        height: auto;
+        
+
+    
+        
+    }
+}
+@media(min-width: 600px) {
+    .Carrusel { width: 300px;
+        
+    }
+    .Carrusel img{
+        width: 300px;
+        height: auto;
+        }
+ 
+
+}
+
+@media (min-width: 760px){
+    .Carrusel { width: 1000px;
+        
+    }
+    .Carrusel img{
+        width: 400px;
+        height: auto;
+        }
+    
+    
+
+}
+
+*{
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Tangerine', cursive;
+    font-family: 'Tangerine', cursive;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 30px;
+}
+
+p{
+    font-size: 25px;
+}
+
+body, header, main, footer{
+    border: 3px blue solid;
+    margin: 0.5rem;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+main{
+    background-color: black;
+    min-height: 20rem;
+}
+
+#seccion1{
+    background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjh54-min.jpg);
+    min-height: 600px;
+    background-position: center;
+    font-size: 50px;
+    color: white;
+    animation-duration: 1.5s;
+}
+
+#seccion1>h2{
+    background-color: black;
+    opacity: 0.7;
+    font-size: 100px;
+    margin: auto;
+}
+
+#seccion3{
+    background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjhjh-min.jpg);
+    min-height: 600px;
+    background-position: center;
+    font-size: 50px;
+    color: white;
+}
+
+footer{
+    font-size: 30px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+#logo{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+.cajaLogo{
+    display: inline;
+    margin: 10px;
+}
+
+.headerMenu{
+    font-size: 30px;
+    display: inline;
+    align-content: end;
+    margin:auto;
+    margin-right: 10px;
+}
+
+.imgComidas{
+    height: auto;
+    width: 25vw;
+    margin: auto;
+}
+
+
+nav>ul>li{
+    font-weight: bold;
+    display: inline;
+}
+
+footer>ul{
+    margin: auto;
+    margin-left: 10px;
+}
+
+ul>li{
+    display: inline;
+}
+
+.cajaComidas{
+    margin: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 28vw;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
