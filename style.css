@@ -14,14 +14,17 @@ p{
 }
 
 body, header, main, footer{
-    border: 3px blue solid;
+/*    border: 3px blue solid;*/
     margin: 0.5rem;
+    background-color: black;
 }
 
 header{
-    background-color: black;
+    background-color: rgba(86, 21, 21, 0.365);
     display: flex;
     flex-direction: row;
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
 }
 
 #logo{
@@ -32,26 +35,26 @@ header{
 
 .cajaLogo{
     display: inline;
-    margin: 0px;
-    padding: 0px;
+    margin: 3px;
+    padding: 3px;
 }
 
 .navbar{
-    font-size: 30px;
+    font-size: 40px;
     display: inline;
     align-content: end;
     margin:auto;
     margin-right: 10px;
+    opacity: 1;
 }
 
-.navbar>ul>li>a{
+.navbar a{
     text-decoration: none;
     color: white;
     font-weight: bold;
-    display: inline;
 }
 
-.navbar>ul>li{
+.navbar li{
     display: inline;
 }
 
@@ -69,7 +72,7 @@ main{
     animation-duration: 1.5s;
 }
 
-#seccion1>h2{
+#seccion1 h2{
     background-color: black;
     opacity: 0.7;
     font-size: 100px;
@@ -84,9 +87,16 @@ main{
     color: white;
 }
 
+#seccion3 h2{
+    background-color: black;
+    opacity: 0.7;
+    font-size: 100px;
+    margin: auto;
+}
+
 .imgComidas{
     height: auto;
-    width: 25vw;
+    width: 27vw;
     margin: auto;
 }
 
@@ -97,6 +107,7 @@ main{
     flex-direction: column;
     height: auto;
     width: 28vw;
+    border-radius: 5px;
 }
 
 section{
@@ -113,6 +124,9 @@ footer{
     display: flex;
     flex-direction: row;
     align-content: center;
+    background-color: rgba(86, 21, 21, 0.365);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
 }
 
 footer>ul{
@@ -120,11 +134,11 @@ footer>ul{
     margin-left: 10px;
 }
 
-footer>ul>li{
+footer li{
     display: inline;
 }
 
-footer>ul>li>a{
+footer a{
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -136,7 +150,6 @@ footer>ul>li>a{
 
 
 /* ACA ARRANCA CSS DE MAURO */
-
 
 
 
@@ -185,8 +198,6 @@ footer>ul>li>a{
     #crear-comentario{ width: 550px;
         height: 50px;
     }
-           
- 
 }
 @media (min-width: 760px){
     #crear-comentario{width: 1100px;
@@ -194,9 +205,6 @@ footer>ul>li>a{
 
 }
 }
-
- 
-
 
 /*
 body{
@@ -239,25 +247,13 @@ body{
     display: flex;
     justify-content: center;
     color: aliceblue;
-    border-radius: 10%;
-    
-    
-   
-    
-    
-    
-    
-    
-    
+    border-radius: 10%; 
 }
 
 .punto{
     display: inline;
     background-color: aliceblue;
-
 }
-
-
 
 .Carrusel{
     width: 2000px;
@@ -266,6 +262,7 @@ body{
 
     animation: slide 25s infinite ease-in-out;
 }
+
 .Carrusel ul{
     display:flex;
     padding: 0px;
@@ -276,8 +273,6 @@ body{
     list-style: none;
     width: 300px;
     margin-left: 400px;
-
-
 }
 .Carrusel img{
     width: 600px;
@@ -305,10 +300,6 @@ body{
     .Carrusel img{
         width: 300px;
         height: auto;
-        
-
-    
-        
     }
 }
 @media(min-width: 600px) {
@@ -364,12 +355,23 @@ body{
     grid-area:form;
     color: white;
     font-weight: bold;
+    align-items: center;
+    display: block;
 }
 
-.datos{
-    background-color: #F5E7A3;  
+.form label{
+    display: block;
+}
+
+.datos{ 
     grid-area: datos;
     text-align: center;
+    color: white;
+}
+
+.datos a{ 
+    text-decoration: none;
+    color: white;
 }
 
 .mapa{
@@ -427,11 +429,6 @@ body{
     text-align: center;
     border-radius: 7px;
     padding: 100%;
-}
-
-label {
-    display: inline-block;
-    width: 100px;  
 }
 
 
