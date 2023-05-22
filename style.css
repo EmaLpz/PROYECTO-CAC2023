@@ -1,3 +1,147 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Tangerine', cursive;
+    font-family: 'Tangerine', cursive;
+}
+
+h3{
+    font-size: 30px;
+}
+
+p{
+    font-size: 25px;
+}
+
+body, header, main, footer{
+    border: 3px blue solid;
+    margin: 0.5rem;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+#logo{
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+}
+
+.cajaLogo{
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    font-size: 30px;
+    display: inline;
+    align-content: end;
+    margin:auto;
+    margin-right: 10px;
+}
+
+.navbar>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline;
+}
+
+.navbar>ul>li{
+    display: inline;
+}
+
+main{
+    background-color: black;
+    min-height: 20rem;
+}
+
+#seccion1{
+    background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjh54-min.jpg);
+    min-height: 600px;
+    background-position: center;
+    font-size: 50px;
+    color: white;
+    animation-duration: 1.5s;
+}
+
+#seccion1>h2{
+    background-color: black;
+    opacity: 0.7;
+    font-size: 100px;
+    margin: auto;
+}
+
+#seccion3{
+    background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjhjh-min.jpg);
+    min-height: 600px;
+    background-position: center;
+    font-size: 50px;
+    color: white;
+}
+
+.imgComidas{
+    height: auto;
+    width: 25vw;
+    margin: auto;
+}
+
+.cajaComidas{
+    margin: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 28vw;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+footer{
+    font-size: 30px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+footer>ul{
+    margin: auto;
+    margin-left: 10px;
+}
+
+footer>ul>li{
+    display: inline;
+}
+
+footer>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline;
+}
+
+
+
+
+
+/* ACA ARRANCA CSS DE MAURO */
+
+
+
+
+
+
 .casillas-comentarios{
     background-color: rgb(33, 28, 28);
     color: antiquewhite;
@@ -54,18 +198,15 @@
  
 
 
-
+/*
 body{
    background-image: url(https://static.vecteezy.com/system/resources/previews/001/948/406/original/wood-table-top-for-display-with-blurred-restaurant-background-free-photo.jpg);
    background-repeat:no-repeat;
    background-size: 250%;
    color: aliceblue;
    border-style: double;
-   
-   
-   
 }
-   
+  
    @media (max-width: 600px) {
    body { background-repeat: repeat;
           padding: 50px;
@@ -89,6 +230,8 @@ body{
             }
 
    }
+
+   */
   
 .conteiner-1{
     background-color: rgb(48, 47, 47);
@@ -107,19 +250,7 @@ body{
     
     
 }
-.navbar{
-    background-color: none;
-    display: flex;
-    
-    
-    
 
-
- 
-    
-    
-
-}
 .punto{
     display: inline;
     background-color: aliceblue;
@@ -205,128 +336,105 @@ body{
 
 }
 
-*{
-    margin: 5px;
-    padding: 5px;
-    font-family: 'Tangerine', cursive;
-    font-family: 'Tangerine', cursive;
-}
 
-a{
-    text-decoration: none;
+
+/*ACA ARRANCA EL CSS DE MARIA EMILIA*/
+
+
+
+/*
+.grid-container{
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr ;
+    grid-template-areas: "header header"
+                         "form form" 
+                         "datos mapa";
+    grid-template-rows: 100px 500px 300px;
+    grid-row-gap: 100px;
+   
+}*/
+
+/*Estilos de las áreas*/
+
+.form{
+    background-color:black;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    grid-area:form;
     color: white;
     font-weight: bold;
 }
 
-h3{
-    font-size: 30px;
+.datos{
+    background-color: #F5E7A3;  
+    grid-area: datos;
+    text-align: center;
 }
 
-p{
+.mapa{
+    background-color: #F5E7A3;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: right;  
+    border-radius: 7px;
+    border-width: 10px 10px 10px 10px;
+    grid-area: mapa;    
+}
+
+/*Estilos de texto, títulos, etc*/
+.titulo{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.subtitulo{
+    font-family: 'Quicksand', sans-serif;
     font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-body, header, main, footer{
-    border: 3px blue solid;
-    margin: 0.5rem;
+.texto{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-header{
-    background-color: black;
-    display: flex;
-    flex-direction: row;
+.button{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    text-align: center;
 }
 
-main{
-    background-color: black;
-    min-height: 20rem;
-}
-
-#seccion1{
-    background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjh54-min.jpg);
-    min-height: 600px;
-    background-position: center;
-    font-size: 50px;
-    color: white;
-    animation-duration: 1.5s;
-}
-
-#seccion1>h2{
-    background-color: black;
-    opacity: 0.7;
-    font-size: 100px;
-    margin: auto;
-}
-
-#seccion3{
-    background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjhjh-min.jpg);
-    min-height: 600px;
-    background-position: center;
-    font-size: 50px;
-    color: white;
-}
-
-footer{
-    font-size: 30px;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-}
-
-#logo{
+.casillas{
     height: 50px;
-    width: 50px;
+    width: 300px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.container-form{
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    border-radius: 7px;
+    padding: 100%;
+}
+
+label {
     display: inline-block;
-}
-
-.cajaLogo{
-    display: inline;
-    margin: 10px;
-}
-
-.headerMenu{
-    font-size: 30px;
-    display: inline;
-    align-content: end;
-    margin:auto;
-    margin-right: 10px;
-}
-
-.imgComidas{
-    height: auto;
-    width: 25vw;
-    margin: auto;
+    width: 100px;  
 }
 
 
-nav>ul>li{
-    font-weight: bold;
-    display: inline;
-}
-
-footer>ul{
-    margin: auto;
-    margin-left: 10px;
-}
-
-ul>li{
-    display: inline;
-}
-
-.cajaComidas{
-    margin: 8px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 28vw;
-}
-
-section{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-}
+/*
+-responsive 
+-puntos de corte */
