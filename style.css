@@ -79,6 +79,10 @@ main{
     margin: auto;
 }
 
+#seccionMenu{
+    background-image: url(https://img.freepik.com/foto-gratis/harina-suelta-encuentra-fondo-negro_1304-3388.jpg?w=900&t=st=1684719773~exp=1684720373~hmac=6461cf8fe92b09189daa714111c4d6202861b5124181f4cd3ba8f8c4256eef1d);
+}
+
 #seccion3{
     background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjhjh-min.jpg);
     min-height: 600px;
