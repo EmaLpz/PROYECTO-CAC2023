@@ -5,6 +5,44 @@
     font-family: 'Tangerine', cursive;
 }
 
+@media (max-width: 576px){
+    .cajaComidas{
+        width: 94%;
+    }
+    .pagMenu{
+        width: 94%;
+    }
+}
+
+@media (max-width: 768px ){
+
+}
+
+@media (min-width: 768px ){
+    .cajaComidas{
+        width: 47%;
+    }
+    .pagMenu{
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px ){
+
+}
+
+@media (min-width: 1200px){
+    .cajaComidas{
+        width: 31%;
+    }
+}
+
+
+
+h1{
+    font-size: 50px;
+}
+
 h3{
     font-size: 30px;
 }
@@ -15,12 +53,13 @@ p{
 
 body, header, main, footer{
 /*    border: 3px blue solid;*/
-    margin: 0.5rem;
+    margin: 0px;
+    padding: 3px;
     background-color: black;
 }
 
 header{
-    background-color: rgba(86, 21, 21, 0.365);
+    background-color: rgba(86, 21, 21, 0.4);
     display: flex;
     flex-direction: row;
     border: 3px rgba(167, 166, 163, 0.452) solid;
@@ -50,7 +89,7 @@ header{
 
 .navbar a{
     text-decoration: none;
-    color: white;
+    color: antiquewhite;
     font-weight: bold;
 }
 
@@ -59,8 +98,8 @@ header{
 }
 
 main{
-    background-color: black;
-    min-height: 20rem;
+    color: antiquewhite;
+    align-content: center;
 }
 
 #seccion1{
@@ -68,7 +107,7 @@ main{
     min-height: 600px;
     background-position: center;
     font-size: 50px;
-    color: white;
+    color: antiquewhite;
     animation-duration: 1.5s;
 }
 
@@ -77,40 +116,30 @@ main{
     opacity: 0.7;
     font-size: 100px;
     margin: auto;
+    text-align: center;
 }
 
 #seccionMenu{
+    color: black;
     background-image: url(https://img.freepik.com/foto-gratis/harina-suelta-encuentra-fondo-negro_1304-3388.jpg?w=900&t=st=1684719773~exp=1684720373~hmac=6461cf8fe92b09189daa714111c4d6202861b5124181f4cd3ba8f8c4256eef1d);
-}
-
-#seccion3{
-    background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjhjh-min.jpg);
-    min-height: 600px;
-    background-position: center;
-    font-size: 50px;
-    color: white;
-}
-
-#seccion3 h2{
-    background-color: black;
-    opacity: 0.7;
-    font-size: 100px;
-    margin: auto;
+    background-repeat:no-repeat;
+    background-size: 125%;
 }
 
 .imgComidas{
     height: auto;
-    width: 27vw;
+    width: 90%;
     margin: auto;
 }
 
 .cajaComidas{
-    margin: 8px;
-    background-color: white;
+    margin: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 28vw;
     border-radius: 5px;
 }
 
@@ -124,11 +153,10 @@ section{
 
 footer{
     font-size: 30px;
-    background-color: black;
     display: flex;
     flex-direction: row;
     align-content: center;
-    background-color: rgba(86, 21, 21, 0.365);
+    background-color: rgba(86, 21, 21, 0.4);
     border: 3px rgba(167, 166, 163, 0.452) solid;
     border-radius: 15px;
 }
@@ -144,23 +172,25 @@ footer li{
 
 footer a{
     text-decoration: none;
-    color: white;
+    color: antiquewhite;
     font-weight: bold;
     display: inline;
 }
 
 
-
-
-
 /* ACA ARRANCA CSS DE MAURO */
 
 
+.mainNosotros{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/001/948/406/original/wood-table-top-for-display-with-blurred-restaurant-background-free-photo.jpg);
 
+}
 
 
 .casillas-comentarios{
-    background-color: rgb(33, 28, 28);
+    background-color: rgba(86, 21, 21, 0.8);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
     color: antiquewhite;
     border-radius: 15px;
     border-style: double;
@@ -210,15 +240,17 @@ footer a{
 }
 }
 
-/*
+
 body{
-   background-image: url(https://static.vecteezy.com/system/resources/previews/001/948/406/original/wood-table-top-for-display-with-blurred-restaurant-background-free-photo.jpg);
-   background-repeat:no-repeat;
-   background-size: 250%;
-   color: aliceblue;
-   border-style: double;
+/*    background-image: url(https://static.vecteezy.com/system/resources/previews/001/948/406/original/wood-table-top-for-display-with-blurred-restaurant-background-free-photo.jpg);
+    background-repeat:no-repeat;
+    background-size: 250%;
+    color: aliceblue;
+    border-style: double;
+    */    
+    background-color: black;
 }
-  
+/*  
    @media (max-width: 600px) {
    body { background-repeat: repeat;
           padding: 50px;
@@ -242,9 +274,7 @@ body{
             }
 
    }
-
-   */
-  
+*/  
 .conteiner-1{
     background-color: rgb(48, 47, 47);
     margin: 5%;
@@ -354,23 +384,33 @@ body{
 .form{
     background-color:black;
     height: auto;
-    width: 100%;
-    text-align: center;
-    grid-area:form;
+    width: 97%;
     color: white;
     font-weight: bold;
-    align-items: center;
-    display: block;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    background-color: rgba(86, 21, 21, 0.4);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
 }
 
-.form label{
-    display: block;
+.form>form{
+    width: 50vw;
 }
 
-.datos{ 
-    grid-area: datos;
-    text-align: center;
+.form>form>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.datos{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     color: white;
+    padding-bottom: 100px;
 }
 
 .datos a{ 
@@ -379,7 +419,7 @@ body{
 }
 
 .mapa{
-    background-color: #F5E7A3;
+    background-color: rgba(86, 21, 21, 0.4);
     height: 400px;
     width: 400px;
     margin: 0 auto;
@@ -391,39 +431,38 @@ body{
 
 /*Estilos de texto, títulos, etc*/
 .titulo{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 30px;
+    font-size: 60px;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 .subtitulo{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 25px;
+    font-size: 40px;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 30px;
 }
 
 .texto{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .button{
+    display: flex;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .casillas{
     height: 50px;
-    width: 300px;
-    text-align: center;
+    width: 35vw;
+    font-size: 25px;
+    text-align: start;
     border-radius: 7px;
 }
 
@@ -434,8 +473,37 @@ body{
     border-radius: 7px;
     padding: 100%;
 }
-
-
 /*
 -responsive 
 -puntos de corte */
+
+
+/* ACA ARRANCA CSS SUCURSALES */
+
+.mainSucursales h1{
+    margin: 30px;
+    text-align: center;
+    font-size: 80px;
+}
+
+.ubicacion{
+    width: 42vw;
+    text-align: center;
+    margin: 15px;
+    background-color: rgba(86, 21, 21, 0.4);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+}
+
+.ubicacion h3{
+    margin: 15px;
+}
+.ubicacion p{
+    margin: 10px;
+}
+
+.map{
+    margin: 10px;
+    width: 30vw;
+    height: 30vw;
+}
