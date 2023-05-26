@@ -178,6 +178,68 @@ footer a{
 }
 
 
+
+/* ACA EMPIEZA CSS MENU */
+
+
+#seccion3{
+    background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/jhjhjh-min.jpg);
+    background-position: center;
+    font-size: 50px;
+    color: antiquewhite;
+}
+
+#seccion4{
+/*
+    background-image: url(https://img.freepik.com/fotos-premium/lonchas-costilla-ternera-plancha-cuchillo-carnicero_89816-20678.jpg);
+*/
+    background-image: url(https://img.freepik.com/fotos-premium/costillas-cerdo-parrilla-ahumadas-salsa-barbacoa-vieja-tabla-cortar-madera-vintage-sobre-fondo-mesa-madera-vieja-aperitivo-sabroso-cerveza-vista-superior_253362-9588.jpg);
+    background-repeat:no-repeat;
+    background-size: 150%;
+    background-position: center;
+    font-size: 50px;
+    color: antiquewhite;
+}
+
+.pagMenu{
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+/* ACA ARRANCA CSS SUCURSALES */
+
+.mainSucursales h1{
+    margin: 30px;
+    text-align: center;
+    font-size: 80px;
+}
+
+.ubicacion{
+    width: 42vw;
+    text-align: center;
+    margin: 15px;
+    background-color: rgba(86, 21, 21, 0.4);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+}
+
+.ubicacion h3{
+    margin: 15px;
+}
+.ubicacion p{
+    margin: 10px;
+}
+
+.map{
+    margin: 10px;
+    width: 38vw;
+}
+
+
+
+
 /* ACA ARRANCA CSS DE MAURO */
 
 
