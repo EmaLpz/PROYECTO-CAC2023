@@ -17,6 +17,9 @@
     .navbar li{
         display: block;
     }
+    .pagMenu{
+        width: 96%;
+    }
     .ubicacion{
         width: 96%;
     }
