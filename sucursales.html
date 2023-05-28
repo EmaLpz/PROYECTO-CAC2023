@@ -27,15 +27,36 @@
                 <li><a href="sucursales.html">Sucursales</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-            </ul>  
+            </ul> 
         </nav>       
     </header>
 
     <main class="mainSucursales">
+        <p id="weatherParagraph" class="titulo"></p>
+        <script>
+            fetch('https://api.openweathermap.org/data/2.5/weather?lat=-34.6&lon=-58.3&appid=55f07957c709e674d9a0c404699b3661')
+              .then(response => response.json())
+              .then(data => {
+                // Extract the necessary information from the data object
+                const temperature = data.main.temp;   
+                const temperatureInCelsius= temperature-273.15    
+                // Create the paragraph content using the extracted information
+                const paragraphContent = `La temperatura actual es ${temperatureInCelsius.toFixed(1)}°C.`;
+        
+                // Update the paragraph text
+                const weatherParagraph = document.getElementById('weatherParagraph');
+                weatherParagraph.textContent = paragraphContent;
+                console.log(data);
+              })
+              .catch(err => {
+                const weatherParagraph = document.getElementById('weatherParagraph');
+                weatherParagraph.textContent = "Failed to fetch weather data.";
+              });
+            </script>
         <section>
             <div class="ubicacion">
                 <div>
-                    <h3>La Bohemia - Suc. Camino</h3>
+                    <h3>La Italiana - Suc. Camino</h3>
                     <p>Cno. Gral. Manuel Belgrano 7669,
                         <br>J. M. Gutiérrez
                         <br><br>Tel: 4411-2233</p>
@@ -44,7 +65,7 @@
             </div>
             <div class="ubicacion">
                 <div>
-                    <h3>La Bohemia - Suc. Quilmes</h3>
+                    <h3>La Italiana - Suc. Quilmes</h3>
                     <p>Lavalle 344
                         <br>Quilmes, Centro
                         <br><br>Tel: 4211-3365
@@ -54,7 +75,7 @@
             </div>
             <div class="ubicacion">
                 <div>
-                    <h3>La Bohemia - Suc. La Plata</h3>
+                    <h3>La Italiana - Suc. La Plata</h3>
                     <p>Calle 7 N3476
                         <br>Ciudad de La Plata
                         <br><br>Tel: 4501-9833</p>
@@ -63,7 +84,7 @@
             </div>
             <div class="ubicacion">
                 <div>
-                    <h3>La Bohemia - Suc. San Telmo</h3>
+                    <h3>La Italiana - Suc. San Telmo</h3>
                     <p>Perú 7669
                         <br>Capital Federal
                         <br><br>Tel: 4411-2233</p>
