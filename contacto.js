@@ -18,23 +18,27 @@ function validateForm() {
     var nombre = document.getElementById("nombre").value;
     var celular = document.getElementById("celular").value;
     var email = document.getElementById("email").value;
-    console.log(nombre)
+    var mensaje = document.getElementById("mensaje").value;
     // Perform validation
-    if (nombre.trim()=="" || !validateName(nombre)) {
+    if (nombre.trim()=="" || !validateName(nombre)){
         console.log(entró )
         return false; // Prevent form submission
     }
   
-    if (celular.trim()== "" || isNaN(celular) || celular[0]=="-") {
+    if (celular.trim()== "" || isNaN(celular) || celular[0]=="-"){
         alert("El número de celular no es correcto");
         return false;
     }
   
-    if (email.trim() == "" || !validateEmail(email.trim()) ) {
+    if (email.trim() == "" || !validateEmail(email.trim())){
         alert("La dirección de email no es correcta");
         return false;
     }
     
+    if (mensaje.trim() == ""){
+        alert("Completa el mensaje");
+        return false;
+    }
     // Additional validation rules can be added here
     alert("El formulario se envió correctamente")
 
