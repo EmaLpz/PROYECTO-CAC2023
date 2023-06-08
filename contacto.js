@@ -6,7 +6,7 @@ function validateEmail(email) {
 function validateName(nombre){
     // Verificar si el nombre contiene solo caracteres alfabéticos y espacios
     if (!/^[A-Za-z\s]+$/.test(nombre    )) {
-        alert('Nombre inválido. Sólo caracteres alfabéticos y espacios están permitidos.');
+        alert("Nombre inválido. Sólo caracteres alfabéticos y espacios están permitidos.");
         return false;
     }
     return true;

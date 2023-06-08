@@ -39,7 +39,7 @@
               .then(data => {
                 const temperature = data.main.temp;   
                 const temperatureInCelsius= temperature-273.15    
-                const paragraphContent = `La temperatura actual es ${temperatureInCelsius.toFixed(1)}°C.`;        
+                const paragraphContent = `La temperatura actual es ${temperatureInCelsius.toFixed(1)}°C.`;
                 const weatherParagraph = document.getElementById('weatherParagraph');
                 weatherParagraph.textContent = paragraphContent;
                 console.log(data);
