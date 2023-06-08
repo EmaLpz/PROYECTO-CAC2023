@@ -4,8 +4,6 @@
     font-family: 'Charm', cursive;
 }
 
-/* Media queries */
-
 @media (max-width: 576px){
     header{
         display: flex;
@@ -134,7 +132,6 @@
     }
 }
 
-/* ACA EMPIEZA CSS INDEX */
 
 body, header, main, footer{
     margin: 0px;
@@ -255,8 +252,6 @@ footer a{
     display: inline;
 }
 
-/* ACA EMPIEZA CSS MENU */
-
 #seccion3{
     display: flex;
     flex-direction: row;
@@ -288,7 +283,6 @@ footer a{
     margin: 5px;
 }
 
-/* ACA EMPIEZA CSS SUCURSALES */
 
 #weatherParagraph{
     font-size: 2.5vw;
@@ -341,8 +335,6 @@ footer a{
     border-radius: 15px;
 }
 
-/* ACA ARRANCA CSS NOSOTROS */
-
 .mainNosotros{
     display: flex;
     flex-direction: column;
@@ -371,9 +363,6 @@ footer a{
     list-style: none;
 }
 
-/*ACA EMPIEZA EL CSS DE CONTACTO*/
-
-/*Estilos de las áreas*/
 
 .mainContacto{
     display: flex;
@@ -431,8 +420,6 @@ footer a{
     color: antiquewhite;
 }
 
-
-/*Estilos de texto, títulos, etc*/
 .titulo{
     font-size: 60px;
     margin-top: 50px;
